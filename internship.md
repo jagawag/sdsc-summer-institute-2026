@@ -38,3 +38,5 @@ A completed Student Employment Form was submitted to Elvert Vasquez (evasquez@uc
 ## Interested?
 
 Please apply via our Handshake posting: https://ucsd.joinhandshake.com/public/jobs/11000308
+
+You will need a valid UCSD student account to log in and apply through Handshake. If you do not have one, you will not be able to access the application.
