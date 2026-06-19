@@ -1,11 +1,10 @@
 # Internship Opportunity for Undergraduate Student Volunteers
 
 
-We are looking for undergraduate volunteers to assist during the sessions for our two Summer Institutes. Volunteers may assist during both sessions:
-* The CIML 2026 Summer Institute (https://github.com/ciml-org/ciml-summer-institute-2026/blob/main/ciml-si26-internship.md).
-   * CIML Dates: Tuesday, June 23, 2026 - Thursday, June 25, 2026
-* The SDSC Summer Institute 2026 (see agenda) ([AGENDA.md](./AGENDA.md)). 
-   * Thursday, July 23, 2026 – Tuesday, August 4, 2026 (see the agenda for the day-by-day schedule).
+We are looking for undergraduate volunteers to assist during the sessions for the SDSC Summer Institute 2026.
+
+* The SDSC Summer Institute 2026 (see agenda) ([AGENDA.md](./AGENDA.md)).
+   * Thursday, July 23, 2026 – Friday, August 7, 2026 (see the agenda for the day-by-day schedule).
 
 ## Volunteer responsibilities
 - Review the session content in advance.
@@ -15,7 +14,13 @@ We are looking for undergraduate volunteers to assist during the sessions for ou
 We would like to have a **different student for each session**.
 
 ## Internship credit
-Volunteers will receive internship credit for the hours they work and an SDSC Internhip CCR for thier official transcripts (note CCRs require 30 hours of effort).
+Volunteers will receive internship credit for the hours they work and an SDSC Internship CCR for their official transcripts. CCRs require **30 hours of effort**. Because CIML will not use interns this year, all 30 hours must come from SDSC Summer Institute activities.
+
+Each intern's 30 hours will be made up of:
+- Pre-session preparation: review content, test exercises, meet with the instructor (~6–10 hours)
+- Assigned session attendance and hands-on support (~2–4 hours)
+- Follow-up: clarify exercises, answer questions, debrief (~2–4 hours)
+- General institute support: orientation prep, logistics, setup/breakdown across additional half-days (~10–15 hours)
 
 See [ccr_info.md](./ccr_info.md) for detailed instructions on how students earn CCR credit and how supervisors validate participation.
 
@@ -37,6 +42,6 @@ A completed Student Employment Form was submitted to Elvert Vasquez (evasquez@uc
 
 ## Interested?
 
-Please apply via our Handshake posting: https://ucsd.joinhandshake.com/public/jobs/11000308
+Please apply via our Handshake posting: https://ucsd.joinhandshake.com/public/jobs/11054382
 
 You will need a valid UCSD student account to log in and apply through Handshake. If you do not have one, you will not be able to access the application.
