@@ -17,7 +17,7 @@ Optional, but recommended,
 Check what CPU you landed on and which cores are you allowed to use:
 lscpu
 taskset -pc $$
-
+(let the instructor know if the cores are not all within a single NUMA node)
 
 Basic compile instructions:
 ---------------------------
