@@ -13,4 +13,4 @@ git clone https://github.com/sdsc/sdsc-summer-institute-2026.git
 ...
 ```
 
-If you have any problem with cloning the repository, please let us know in the Slack channel.
+If you have any problem with cloning the repository, please let us know.
