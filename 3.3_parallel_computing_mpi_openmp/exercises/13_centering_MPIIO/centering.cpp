@@ -51,7 +51,10 @@ void center_matrix_full(uint32_t rows, uint32_t cols, const double* input, doubl
 
 // center a subset of the matrix
 // MPI used for gathering necessary info from other processes
-void center_matrix(uint32_t local_rows, uint32_t cols, const double* input, double* output) {
+void center_matrix(uint32_t start_row_offset, uint32_t local_rows, uint32_t total_rows, uint32_t cols, const double* input, double* output) {
+
+    // input and output contain local_rows*cols elements each
+
     // TODO: Implement this function, based on the single-process example above
     // Hint: MPI_COMM_WORLD is global, like all the MPI functions
 
@@ -153,7 +156,7 @@ int main(int argc, char* argv[]) {
     std::vector<double> output_matrix(local_elements);
 
     // Call the actual centering logic
-    center_matrix(local_rows, cols, input_matrix.data(), output_matrix.data());
+    center_matrix(start_row, local_rows, total_rows, cols, input_matrix.data(), output_matrix.data());
 
     // ==========================================
     // 3. WRITE MATRIX VIA MPI-IO

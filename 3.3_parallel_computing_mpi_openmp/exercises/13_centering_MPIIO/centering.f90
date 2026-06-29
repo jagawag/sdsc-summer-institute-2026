@@ -103,7 +103,7 @@ program centering
 
     ! ==========================================
     ! 2. EXTERNAL COMPUTATION
-    call center_matrix(local_rows, cols, input_matrix, output_matrix)
+    call center_matrix(start_row, local_rows, total_rows, cols, input_matrix, output_matrix)
 
     ! ==========================================
     ! 3. WRITE MATRIX VIA MPI-IO
@@ -137,12 +137,12 @@ contains
 
 ! center a subset of the matrix
 ! MPI used for gathering necessary info from other processes
-subroutine center_matrix(local_rows, cols, input, output)
+subroutine center_matrix(start_row_offset, local_rows, total_rows, cols, input, output)
     use mpi
     use iso_c_binding
     implicit none
     
-    integer(c_int32_t), value :: local_rows, cols
+    integer(c_int32_t), intent(in) :: start_row_offset, local_rows, total_rows, cols
     real(c_double), intent(in) :: input(cols, local_rows)
     real(c_double), intent(out) :: output(cols, local_rows)
 
@@ -157,7 +157,7 @@ subroutine center_matrix_full(rows, cols, input, output)
     implicit none
     
     ! Note: rows==cols in the full version, but will not be the case in the partitioned version
-    integer(c_int32_t), value :: rows, cols
+    integer(c_int32_t), intent(in) :: rows, cols
     real(c_double), intent(in) :: input(cols, rows)
     real(c_double), intent(out) :: output(cols, rows)
 
