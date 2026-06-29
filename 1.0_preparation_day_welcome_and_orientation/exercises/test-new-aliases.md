@@ -1,4 +1,4 @@
-# Exercise 8: Test your new command aliases
+# Exercise 5: Test your new command aliases
 
 *Command*
 ```
