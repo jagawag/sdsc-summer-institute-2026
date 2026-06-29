@@ -1,6 +1,6 @@
 # Exercise 3: Check your allocation access
 
-Next, let's verify you are listed on the SI26 allocation (**sds280**) for next week.
+Next, let's verify you are listed on the SI26 allocation (**gue998**) for next week.
 
 *Command*
 ```
