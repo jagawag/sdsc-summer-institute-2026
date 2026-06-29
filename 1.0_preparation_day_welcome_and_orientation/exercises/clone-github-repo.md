@@ -1,4 +1,4 @@
-# Exercise 5: Clone the GitHub repository
+# Exercise 4: Clone the GitHub repository
 
 Next, clone the GitHub repository to your `$HOME` directory on Expanse.
 
