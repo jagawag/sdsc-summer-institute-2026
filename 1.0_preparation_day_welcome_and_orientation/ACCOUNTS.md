@@ -13,7 +13,7 @@ Everything you need to know about getting your account setup on [Expanse](https:
 ## Presentation Slides
 - N/A
 
-## Hands-On Exercises
+## Exercises
 
 - [Exercise 1: Login via the Expanse User Portal](exercises/login-via-portal.md)
 - [Exercise 2: Login via SSH](exercises/login-via-ssh.md)
