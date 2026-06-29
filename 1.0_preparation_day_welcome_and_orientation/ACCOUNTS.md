@@ -1,14 +1,14 @@
-# Session 1.2: Getting Started with Expanse
+# Getting Started with Expanse: Accounts, Login, Environment
 
 <img src='https://www.sdsc.edu/_files/images/news_items/PR20250505_magnetism_expanse.jpg' width='100%' height='100%'/>
 
-Everything you need to know about getting your account setup on [Expanse](https://www.sdsc.edu/systems/expanse/index.html) for the CIML26 Summer Institute.
+Everything you need to know about getting your account setup on [Expanse](https://www.sdsc.edu/systems/expanse/index.html) for the SDSC Summer Institute 2026.
 
 - Presented by: [Marty Kandes](https://www.sdsc.edu/research/experts/kandes-marty.html)  (mkandes@sdsc.edu)
-- Date:  Tuesday, June 16, 2026 (CIML26 Prep Day)
+- Date:  Thursday, July 23rd, 2026 (SI26 Prep Day)
 
 ## Prerequisites
-- [Session 0: Preparing for the CIML Summer Institute](https://github.com/ciml-org/ciml-summer-institute-2026/tree/main/0_preparation)
+- [Session 0: Preparing for the SDSC Summer Institute 2026](https://github.com/mkandes/sdsc-summer-institute-2026/blob/main/0_Preparation/README.md)
 
 ## Presentation Slides
 - N/A
