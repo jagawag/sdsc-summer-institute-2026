@@ -23,7 +23,7 @@ Everything you need to know about getting your account setup on [Expanse](https:
 - [Exercise 6: The `git pull` command](exercises/git-pull-repo.md)
 
 ## Additional References
-- N/A
+- [Expanse User Guide](https://www.sdsc.edu/systems/expanse/user_guide.html)
 
 ## About the Summer Institue
 
