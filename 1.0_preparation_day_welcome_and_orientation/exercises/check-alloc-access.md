@@ -1,4 +1,4 @@
-# Exercise 4: Check your allocation access
+# Exercise 3: Check your allocation access
 
 Next, let's verify you are listed on the CIML26 allocation (**sds280**) for next week.
 
