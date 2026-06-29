@@ -102,7 +102,8 @@ program centering
     call MPI_File_close(in_file, ierr)
 
     ! ==========================================
-    ! 2. EXTERNAL COMPUTATION
+    ! 2. We are now ready to center the matrix
+    ! Call the actual centering logic
     call center_matrix(start_row, local_rows, total_rows, cols, input_matrix, output_matrix)
 
     ! ==========================================
