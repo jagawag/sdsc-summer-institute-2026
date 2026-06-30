@@ -18,7 +18,6 @@ Check what CPU you landed on and which cores are you allowed to use:
 lscpu
 taskset -pc $$
 
-
 Basic compile instructions:
 ---------------------------
 # Build
