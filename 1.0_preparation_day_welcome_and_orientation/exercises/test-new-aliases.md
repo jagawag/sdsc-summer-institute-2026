@@ -16,12 +16,12 @@ srun-compute
 
 *Command*
 ```
-srun-nairr-gpu-shared
+srun-gpu-shared
 ```
 
 *Output*
 ```
-[mkandes@login01 ~]$ srun-nairr-gpu-shared 
+[mkandes@login01 ~]$ srun-gpu-shared 
 srun: Requested partition configuration not available now
 srun: job 50938039 queued and waiting for resources
 ```
@@ -30,7 +30,7 @@ srun: job 50938039 queued and waiting for resources
 ```
 [mkandes@login01 ~]$ squeue --me
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-          50938039 nairr-gpu     bash  mkandes PD       0:00      1 (Job's QOS not permitted to use this partition (nairr-gpu-shared allows nairr-gpu-shared-normal not nairr-gpu-shared-eot))
+          50938039 gpu     bash  mkandes PD       0:00      1 (Job's QOS not permitted to use this partition (gpu-shared allows gpu-shared-normal not gpu-shared-eot))
 [mkandes@login01 ~]$
 ```
 

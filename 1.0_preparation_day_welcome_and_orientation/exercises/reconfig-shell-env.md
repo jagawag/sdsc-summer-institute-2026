@@ -4,12 +4,12 @@ Navigate to the Session 1.2. material in the repo on Expanse.
 
 *Command*
 ```
-cd ~/ciml-summer-institute-2026/1.2_accounts_login_environment_expanse_portal/
+cd ~/sdsc-summer-institute-2026/1.2_accounts_login_environment_expanse_portal/
 ```
 
 *Output*
 ```
-[mkandes@login01 ~]$ cd ~/ciml-summer-institute-2026/1.2_accounts_login_environment_expanse_portal/
+[mkandes@login01 ~]$ cd ~/sdsc-summer-institute-2026/1.2_accounts_login_environment_expanse_portal/
 [mkandes@login02 1.2_accounts_login_environment_expanse_portal]$ ls -lahtr
 total 149K
 -rw-r--r--  1 mkandes use300  141 Jun 22 16:00 .bash_profile
@@ -87,12 +87,12 @@ Once logged back in, check if you have the new environment available.
 
 *Command*
 ```
-echo $CIML26_DATA_DIR
+echo $SI26_DATA_DIR
 ```
 
 *Output*
 ```
-[mkandes@login01 ~]$ echo $CIML26_DATA_DIR
-/cm/shared/examples/sdsc/ciml/2026
+[mkandes@login01 ~]$ echo $SI26_DATA_DIR
+/cm/shared/examples/sdsc/sdsc/2026
 [mkandes@login01 ~]$
 ```
