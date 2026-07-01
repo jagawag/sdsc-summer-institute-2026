@@ -6,8 +6,8 @@ Helper(s) convention: blank means a helper is needed (TBD); `-` means no helper 
 
 | Time (Pacific)     | Duration    | Session                                                                         | Speaker(s)   | Helper(s) |
 | :----------------- | :---------- | :------------------------------------------------------------------------------ | :----------- | :-------- |
-| 9:00 AM – 9:30 AM  | 30 min      | Preparation Day - Welcome & Orientation                                         | Mary Thomas  | -         |
-| 9:30 AM - 9:45 AM  | 15 min      | Logistics - Things to Know                                                      | Cindy Wong   |           |
+| 9:00 AM – 9:30 AM  | 30 min      | Preparation Day - Welcome & Orientation                                         | Andrea Zonca | -         |
+| 9:30 AM - 9:45 AM  | 15 min      | Logistics - Things to Know                                                      | Susan Rathbun   |           |
 | 9:45 AM - 11:00 AM | 1 hr 15 min | Accounts, Login, Environment, Running Jobs and Logging into Expanse User Portal | Marty Kandes |           |
 
 ## Monday, August 3
