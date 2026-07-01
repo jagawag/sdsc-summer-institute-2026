@@ -10,4 +10,4 @@
 **Presenters:** 
 - [Mary Thomas](https://www.sdsc.edu/research/experts/thomas_mary.html) (Welcome & Orientation)
 - [Cindy Wong](https://www.sdsc.edu/) (Logistics)
-- [Marty Kandes](https://www.sdsc.edu/research/experts/kandes-marty.html) (Accounts, Login, Environment)
+- [Marty Kandes](https://www.sdsc.edu/research/experts/kandes-marty.html) ([Accounts, Login, Environment](ACCOUNTS.md))
