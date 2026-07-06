@@ -64,13 +64,27 @@ The [Expanse User Guide](https://www.sdsc.edu/support/user_guides/expanse.html) 
 
 ## HPC Systems Accounts
 
-A training account on SDSC's Expanse system will be created for you. You will receive an email from consult@sdsc.edu with the subject "HPC & Data Science 2026 Summer Institute: Account Set-Up" containing your username, password, and instructions.
+**ATTENTION: ACCESS ID profile must be up-to-date with the following:**
+ * U.S. Institutional Email and U.S. Institution (must match)
+ * Country of Residence
 
-Please use the training account provided, even if you have your own Expanse account — this avoids issues from custom configurations (environment variables, shell choice, etc.) that may break the hands-on examples.
+Note: If not, you will not be able to access the system.
 
-Access your training account via:
-- SSH to `login.expanse.sdsc.edu`
-- The Expanse Training Portal: https://portal.expanse.sdsc.edu/training
+Your ACCESS-CI account has been added to our training allocation. We do not use local passwords.  For access to Expanse you will need to login with your ACCESS-CI credentials. If you have forgotten your ACCESS-CI portal password you can reset it at https://identity.access-ci.org/password-reset // [Reset ACCESS-CI Password](https://identity.access-ci.org/password-reset).
+
+In addition, for direct access via ssh,  if you have not already done so, you will need to set up 2FA at SDSC.  (This 2FA is independent of the 2FA you enrolled in with your ACCESS-CI portal account). To enroll please visit https://passive.sdsc.edu // [Enroll with SDSC's 2FA](https://passive.sdsc.edu)
+
+Be sure to choose the **“Globus”** option to login and use ACCESS CI as the organization **(not your home institution)** when you login. Once you are logged in on the page there should be a “Manage 2FA” button. If you click that you should get the option to read a QR code from your authenticator app to link into your account. **_(NOTE:  This change may take up to 15 minutes to update on the system)._**
+
+Full instructions can be found at: https://www.sdsc.edu/systems/expanse/user_guide.html#narrow-wysiwyg-2 // [Visit for full istructions](https://www.sdsc.edu/systems/expanse/user_guide.html#narrow-wysiwyg-2)
+
+You can go to: https://passive.sdsc.edu
+
+### Account access may be used:
+ * Via SSH directly to login.expanse.sdsc.edu // [Direct login to SSH](login.expanse.sdsc.edu )
+ * Via the Expanse Portal: https://portal.expanse.sdsc.edu // [Login via Expanse Portal](https://portal.expanse.sdsc.edu)
+
+**For questions related to your Expanse account, please contact consult@sdsc.edu.** In your email subject line, enter "Expanse Access: HPC & DS 2026."
 
 [Back to Top](#top)
 <hr>
