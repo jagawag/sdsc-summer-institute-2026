@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --job-name="dask-workers"
+#SBATCH --output="dask-workers.%j.%N.out"
+#SBATCH --partition=compute
+#SBATCH --reservation=si26cpu
+#SBATCH --account=gue998
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=128
+#SBATCH --export=ALL
+#SBATCH --mem=240G
+#SBATCH -t 0:10:00
+
+srun --exact --ntasks=2 --ntasks-per-node=1 --unbuffered \
+    bash -c 'source ../0_python_condaenv_scratch/stage_condaenv.sh pythonhpc && source ./launch_worker.sh'
