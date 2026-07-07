@@ -7,7 +7,8 @@ Please complete the following before the institute begins. Being prepared will l
 
 - [ ] **Set up your accounts:**
     - [ ] [Create a GitHub account](#github).
-    - [ ] Look for an email about your Expanse training account.
+    - [ ] [Update your ACCESS-CI profile](#hpc-systems-accounts) (institutional email, country of residence).
+    - [ ] [Set up SDSC 2FA](#hpc-systems-accounts) for SSH access.
 - [ ] **Laptop setup:**
     - [ ] [Install an SSH client](#computer-requirements) on your laptop.
     - [ ] [Install Slack](#slack) and join the workspace.
@@ -64,27 +65,42 @@ The [Expanse User Guide](https://www.sdsc.edu/support/user_guides/expanse.html) 
 
 ## HPC Systems Accounts
 
-**ATTENTION: ACCESS ID profile must be up-to-date with the following:**
- * U.S. Institutional Email and U.S. Institution (must match)
- * Country of Residence
+This year we are using your individual **ACCESS-CI accounts** (not training accounts) due to NSF eligibility requirements. Your ACCESS-CI account has been added to our training allocation.
 
-Note: If not, you will not be able to access the system.
+### Before You Log In
 
-Your ACCESS-CI account has been added to our training allocation. We do not use local passwords.  For access to Expanse you will need to login with your ACCESS-CI credentials. If you have forgotten your ACCESS-CI portal password you can reset it at https://identity.access-ci.org/password-reset // [Reset ACCESS-CI Password](https://identity.access-ci.org/password-reset).
+**1. Update your ACCESS-CI profile**
 
-In addition, for direct access via ssh,  if you have not already done so, you will need to set up 2FA at SDSC.  (This 2FA is independent of the 2FA you enrolled in with your ACCESS-CI portal account). To enroll please visit https://passive.sdsc.edu // [Enroll with SDSC's 2FA](https://passive.sdsc.edu)
+Your ACCESS ID profile must be up-to-date with the following:
 
-Be sure to choose the **“Globus”** option to login and use ACCESS CI as the organization **(not your home institution)** when you login. Once you are logged in on the page there should be a “Manage 2FA” button. If you click that you should get the option to read a QR code from your authenticator app to link into your account. **_(NOTE:  This change may take up to 15 minutes to update on the system)._**
+- U.S. Institutional Email and U.S. Institution (must match)
+- Country of Residence
 
-Full instructions can be found at: https://www.sdsc.edu/systems/expanse/user_guide.html#narrow-wysiwyg-2 // [Visit for full istructions](https://www.sdsc.edu/systems/expanse/user_guide.html#narrow-wysiwyg-2)
+If this information is missing or incorrect, you will not be able to access the system. Update your profile at [portal.access-ci.org](https://portal.access-ci.org).
 
-You can go to: https://passive.sdsc.edu
+**2. Set up SDSC 2FA**
 
-### Account access may be used:
- * Via SSH directly to login.expanse.sdsc.edu // [Direct login to SSH](login.expanse.sdsc.edu )
- * Via the Expanse Portal: https://portal.expanse.sdsc.edu // [Login via Expanse Portal](https://portal.expanse.sdsc.edu)
+For direct SSH access, you need to enroll in SDSC's two-factor authentication. This is separate from the 2FA you may have set up with your ACCESS-CI portal account.
 
-**For questions related to your Expanse account, please contact consult@sdsc.edu.** In your email subject line, enter "Expanse Access: HPC & DS 2026."
+- Visit [passive.sdsc.edu](https://passive.sdsc.edu)
+- Choose the **"Globus"** login option
+- Select **ACCESS CI** as the organization (not your home institution)
+- Click **"Manage 2FA"** and scan the QR code with your authenticator app
+
+Note: This change may take up to 15 minutes to propagate.
+
+Full instructions are available in the [Expanse User Guide](https://www.sdsc.edu/systems/expanse/user_guide.html#narrow-wysiwyg-2).
+
+### How to Access Expanse
+
+- **SSH:** `ssh login.expanse.sdsc.edu`
+- **Web Portal:** [portal.expanse.sdsc.edu](https://portal.expanse.sdsc.edu)
+
+If you have forgotten your ACCESS-CI password, reset it at [identity.access-ci.org/password-reset](https://identity.access-ci.org/password-reset).
+
+### Need Help?
+
+For questions related to your Expanse account, please contact [consult@sdsc.edu](mailto:consult@sdsc.edu). In your email subject line, write "Expanse Access: HPC & DS 2026."
 
 [Back to Top](#top)
 <hr>
