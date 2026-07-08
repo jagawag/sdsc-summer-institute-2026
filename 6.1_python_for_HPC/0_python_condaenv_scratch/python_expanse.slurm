@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=node-info
-#SBATCH --account=gue998
+#SBATCH --account=${SI26_ACCOUNT:-gue998}
 #SBATCH --partition=compute
-#SBATCH --reservation=si26cpu
+#SBATCH --reservation=${SI26_RES_CPU:-si26cpu}
 #SBATCH --nodes=3
 #SBATCH --ntasks=3
 #SBATCH --ntasks-per-node=1

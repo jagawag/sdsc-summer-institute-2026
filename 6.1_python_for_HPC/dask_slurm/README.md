@@ -1,27 +1,62 @@
 # Dask workers on Expanse
 
-## Launch scheduler
+This directory launches a **Dask distributed cluster** that spans multiple Expanse
+compute nodes. The notebook `5_dask/4_multinode_distributed_array.ipynb` connects
+to the cluster built here.
 
-The scheduler needs to be launched on the same computing node used by the Notebook
-so that we can connect easily from the Notebook to it.
-The simpler way is to use the Terminal inside JupyterLab, open it and run:
+The cluster has two parts:
 
-    bash launch_scheduler.sh
+1. A **scheduler** running on the same node as your Jupyter notebook.
+2. A **worker job** (this directory's `dask_workers.slrm`) running on one or more
+   *other* compute nodes, connecting back to the scheduler.
 
-Leave this running and look later for the workers connecting.
+## 0. Edit the worker script for your allocation
 
-## Launch workers
+Open `dask_workers.slrm` and set the SLURM directives to your allocation. The SI26
+values below are placeholders — replace them with your own `--account` and
+`--reservation` if you are running outside the institute:
 
-In order to launch workers you need to have access to `SLURM` commands, unfortunately
-the Singularity container we are using does not have them.
-So get a terminal on the login node and submit the dask workers job.
+```bash
+#SBATCH --account=gue998        # SI26 training allocation
+#SBATCH --reservation=si26cpu   # SI26 CPU reservation
+```
 
-    sbatch dask_workers.slrm
+## 1. Start the scheduler (on the notebook node)
 
-Look at the scheduler terminal and check for logs of the workers connecting as soon
-as the job starts.
+Open a terminal *inside JupyterLab* (so it runs on the same node as the notebook)
+and run:
 
-## Send jobs to the workers
+```bash
+bash dask_slurm/launch_scheduler.sh
+```
 
-See the Notebooks on how to create a `distributed.Client` object to connect from
-the Notebook to the scheduler.
+Leave that terminal open — the scheduler runs in the foreground and prints a line
+each time a worker connects. The scheduler writes its address to
+`~/.dask_scheduler.json`, which the worker job reads to find it.
+
+## 2. Submit the worker job (from the login node)
+
+The Singularity container does not include SLURM commands, so submit the worker
+job from a terminal on the Expanse **login node**:
+
+```bash
+sbatch dask_slurm/dask_workers.slrm
+```
+
+Within a minute or two you should see the workers from the worker nodes connect
+in the scheduler terminal.
+
+## 3. Connect from the notebook
+
+Back in `5_dask/4_multinode_distributed_array.ipynb`, the first code cell connects
+to the scheduler and waits for at least one worker. Once `client` is set, every
+`.compute()` ships the task graph to the distributed workers.
+
+## Teardown
+
+When you are done, `Ctrl-C` the scheduler in its terminal and `scancel` the worker
+job from the login node:
+
+```bash
+scancel <job_id_from_sbatch>
+```
