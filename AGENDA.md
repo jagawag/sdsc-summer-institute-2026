@@ -24,7 +24,7 @@ Helper(s) convention: blank means a helper is needed (TBD); `-` means no helper 
 | 3:15 PM - 3:30 PM  | 15 min      | Break                                   | -                   | -         |
 | 3:30 PM - 5:00 PM   | 1 hr 30 min | Code Migration & Software Environments | Yuwu Chen           |           |
 | 5:00 PM - 5:05 PM   | 5 min       | Day Survey                             | Andrea Zonca        | -         |
-| 5:30 PM - 7:00 PM  | 1 hr 30 min | Reception @ [15th Floor, UCSD Campus](https://maps.app.goo.gl/1vFYHbRWcE1NJ4q68)                     | -                   | -         |
+| 5:30 PM - 7:00 PM  | 1 hr 30 min | Reception @ [15th Floor, UCSD Campus](https://maps.app.goo.gl/1vFYHbRWcE1NJ4q68) (10176 Scholars Dr N, La Jolla, CA 92093, USA) | -                   | -         |
 
 ## Tuesday, August 4
 
