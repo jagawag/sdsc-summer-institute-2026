@@ -39,9 +39,11 @@ The Co-Curricular Record (CCR) is an official UC San Diego record printed with y
 2. Click **"Co-Curricular Module"** in the left navigation
 3. Click **"Add an Experience"** under your name
 4. Select the correct academic year under **"Period"**
-5. Search for **"SDSC Summer Institute"**
-6. Click the **"+"** on the correct position
+5. Search for **"Summer Education Program Assistant"** (this is the exact position title under "SDSC Education and Outreach")
+6. Click the **"+"** on the matching position
 7. Your participation will appear as **"Pending"** until validated by your coordinator
+
+**Note:** Searching for "SDSC Summer Institute" may not return results -- use the exact position name above.
 
 Need help? Contact the [Experiential Learning Hub](https://experientiallearning.ucsd.edu/ccr/index.html).
 

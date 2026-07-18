@@ -37,7 +37,7 @@ Helper(s) convention: blank means a helper is needed (TBD); `-` means no helper 
 | 11:45 AM - 12:15 PM | 30 min      | Data Center Tour: Presentation         | Andrea Zonca, Andreas Goetz | -         |
 | 12:15 PM - 12:35 PM | 20 min      | Data Center Tour: Walk-throughs (2 groups of 5) | Andrea Zonca, Andreas Goetz | -         |
 | 12:15 PM - 1:30 PM  | 1 hr 15 min | Lunch                                  | -                   | -         |
-| 1:30 PM – 2:15 PM   | 45 min      | Getting Help                           | Nicole Wolter       |               |
+| 1:30 PM – 2:15 PM   | 45 min      | Getting Help                           | Nicole Wolter       | -               |
 | 2:15 PM - 4:45 PM   | 2 hr 30 min | Parallel Computing using MPI & Open MP | Igor Sfiligoi       | Hadia Bayat   |
 | 4:45 PM - 4:50 PM   | 5 min       | Day Survey                                                  | Andrea Zonca | -         |
 
@@ -46,7 +46,7 @@ Helper(s) convention: blank means a helper is needed (TBD); `-` means no helper 
 | Time (Pacific)      | Duration    | Session                    | Speaker(s)                 | Helper(s) |
 | :------------------ | :---------- | :------------------------- | :------------------------- | :-------- |
 | 8:00 AM – 8:30 AM   | 30 min      | Check-in & Light Breakfast | -                          | -         |
-| 8:30 AM - 10:30 AM  | 2 hr        | Knowledge Management       | Subhasis Dasgupta          | Andy Liang |
+| 8:30 AM - 10:30 AM  | 2 hr        | Knowledge Management       | Subhasis Dasgupta, Andy Liang |           |
 | 10:30 AM - 12:00 PM | 1 hr 30 min | Deep Learning - Part 1     | Mai Nguyen, Paul Rodriguez |           |
 | 12:00 PM - 1:30 PM  | 1 hr 30 min | Lunch                      | -                          | -         |
 | 12:00 PM - 12:20 PM | 20 min      | Data Center Tour: Walk-throughs (3 groups of 5) | Andrea Zonca, Andreas Goetz | -         |
