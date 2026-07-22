@@ -98,11 +98,15 @@ public:
          throw std::runtime_error("Row mismatch");
        }
     } else if (other.dims[0]==1) {
-       // add the only element to all the rows in each column
+       if (other.dims[1] == dims[1]) {
+         // add the only element to all the rows in each column
 #pragma omp parallel for
-       for (size_t col=0; col<dims[0]; col++)
-         for (size_t row=0; row<dims[1]; row++)
-           out.el(col,row) = el(col,row)+other.el(0,row);
+         for (size_t col=0; col<dims[0]; col++)
+           for (size_t row=0; row<dims[1]; row++)
+             out.el(col,row) = el(col,row)+other.el(0,row);
+       } else {
+         throw std::runtime_error("Row mismatch");
+       }
     } else {
       throw std::runtime_error("Col mismatch");
     }
@@ -128,11 +132,15 @@ public:
          throw std::runtime_error("Row mismatch");
        }
     } else if (other.dims[0]==1) {
-       // add the only element to all the rows in each column
+       if (other.dims[1] == dims[1]) {
+         // add the only element to all the rows in each column
 #pragma omp parallel for
-       for (size_t col=0; col<dims[0]; col++)
-         for (size_t row=0; row<dims[1]; row++)
-           out.el(col,row) = el(col,row)-other.el(0,row);
+         for (size_t col=0; col<dims[0]; col++)
+           for (size_t row=0; row<dims[1]; row++)
+             out.el(col,row) = el(col,row)-other.el(0,row);
+       } else {
+         throw std::runtime_error("Row mismatch");
+       }
     } else {
       throw std::runtime_error("Col mismatch");
     }
