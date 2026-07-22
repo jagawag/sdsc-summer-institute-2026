@@ -38,7 +38,7 @@ public:
 
   Matrix operator*(double c) const {
     Matrix out(dims[0],dims[1]);
-#pragma omp paeallel for
+#pragma omp parallel for
     for (size_t col=0; col<dims[0]; col++)
       for (size_t row=0; row<dims[1]; row++)
         out.el(col,row) = el(col,row)*c;
@@ -47,7 +47,7 @@ public:
 
   Matrix operator+(double c) const {
     Matrix out(dims[0],dims[1]);
-#pragma omp paeallel for
+#pragma omp parallel for
     for (size_t col=0; col<dims[0]; col++)
       for (size_t row=0; row<dims[1]; row++)
         out.el(col,row) = el(col,row)+c;
@@ -56,7 +56,7 @@ public:
 
   Matrix operator-(double c) const {
     Matrix out(dims[0],dims[1]);
-#pragma omp paeallel for
+#pragma omp parallel for
     for (size_t col=0; col<dims[0]; col++)
       for (size_t row=0; row<dims[1]; row++)
         out.el(col,row) = el(col,row)-c;
@@ -68,7 +68,7 @@ public:
     if ((other.dims[0] == dims[0]) &&
          (other.dims[1] == dims[1])) {
          // same size, add all elements
-#pragma omp paeallel for
+#pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
              out.el(col,row) = el(col,row)*other.el(col,row);
@@ -83,13 +83,13 @@ public:
     if (other.dims[0] == dims[0]) {
        if (other.dims[1] == dims[1]) {
          // same size, add all elements
-#pragma omp paeallel for
+#pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
              out.el(col,row) = el(col,row)+other.el(col,row);
        } else if (other.dims[1]==1) {
          // add the only element to all the rows in each column
-#pragma omp paeallel for
+#pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
              out.el(col,row) = el(col,row)+other.el(col,0);
@@ -98,7 +98,7 @@ public:
        }
     } else if (other.dims[0]==1) {
        // add the only element to all the rows in each column
-#pragma omp paeallel for
+#pragma omp parallel for
        for (size_t col=0; col<dims[0]; col++)
          for (size_t row=0; row<dims[1]; row++)
            out.el(col,row) = el(col,row)+other.el(0,row);
@@ -113,13 +113,13 @@ public:
     if (other.dims[0] == dims[0]) {
        if (other.dims[1] == dims[1]) {
          // same size, add all elements
-#pragma omp paeallel for
+#pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
              out.el(col,row) = el(col,row)-other.el(col,row);
        } else if (other.dims[1]==1) {
          // add the only element to all the rows in each column
-#pragma omp paeallel for
+#pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
              out.el(col,row) = el(col,row)-other.el(col,0);
@@ -128,7 +128,7 @@ public:
        }
     } else if (other.dims[0]==1) {
        // add the only element to all the rows in each column
-#pragma omp paeallel for
+#pragma omp parallel for
        for (size_t col=0; col<dims[0]; col++)
          for (size_t row=0; row<dims[1]; row++)
            out.el(col,row) = el(col,row)-other.el(0,row);
@@ -140,7 +140,7 @@ public:
 
   double mean() const {
     double sum = 0.0;
-#pragma omp paeallel for reduction(+:sum)
+#pragma omp parallel for reduction(+:sum)
     for (size_t col=0; col<dims[0]; col++)
       for (size_t row=0; row<dims[1]; row++)
          sum+=el(col,row);
@@ -149,7 +149,7 @@ public:
 
   Matrix col_means() const {
     Matrix out(dims[0],1);
-#pragma omp paeallel for
+#pragma omp parallel for
     for (size_t col=0; col<dims[0]; col++) {
       double sum = 0.0;
       for (size_t row=0; row<dims[1]; row++)
@@ -161,7 +161,7 @@ public:
 
   Matrix row_means() const {
     Matrix out(1,dims[1]);
-#pragma omp paeallel for
+#pragma omp parallel for
     for (size_t row=0; row<dims[1]; row++) {
       double sum = 0.0;
       for (size_t col=0; col<dims[0]; col++)
@@ -199,7 +199,7 @@ int main(int argc, char *argv[]) {
     }
 
     Matrix m1(N,N);
-#pragma omp paeallel for
+#pragma omp parallel for
     for (size_t col=0; col<N; col++)
       for (size_t row=0; row<N; row++)
         m1.el(col,row) = 0.1*col-0.15*row;
