@@ -1,8 +1,9 @@
 #include <cstdint>
 #include <stdexcept>
+#include <cstdio>
+#include <cstdlib>
 #include <math.h>
 #include <time.h>
-
 
 class Matrix {
 public:
@@ -67,7 +68,7 @@ public:
     Matrix out(dims[0],dims[1]);
     if ((other.dims[0] == dims[0]) &&
          (other.dims[1] == dims[1])) {
-         // same size, add all elements
+         // same size, multiply all elements
 #pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
@@ -112,13 +113,13 @@ public:
     Matrix out(dims[0],dims[1]);
     if (other.dims[0] == dims[0]) {
        if (other.dims[1] == dims[1]) {
-         // same size, add all elements
+         // same size, subtract all elements
 #pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
              out.el(col,row) = el(col,row)-other.el(col,row);
        } else if (other.dims[1]==1) {
-         // add the only element to all the rows in each column
+         // subtract the only element to all the rows in each column
 #pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
@@ -200,8 +201,8 @@ int main(int argc, char *argv[]) {
 
     Matrix m1(N,N);
 #pragma omp parallel for
-    for (size_t col=0; col<N; col++)
-      for (size_t row=0; row<N; row++)
+    for (int col=0; col<N; col++)
+      for (int row=0; row<N; row++)
         m1.el(col,row) = 0.1*col-0.15*row;
 
     struct timespec start_real, end_real;
