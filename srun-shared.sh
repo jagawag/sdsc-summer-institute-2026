@@ -5,9 +5,11 @@
 # Requests an interactive srun on the Expanse shared partition with:
 #   1 node, 4 CPUs, 16 GB memory, 4 hour time limit
 #   Account: sdp173
+#   Reservation: si26cpu
 
 srun \
   --account=sdp173 \
+  --reservation=si26cpu \
   --partition=shared \
   --nodes=1 \
   --ntasks-per-node=1 \
