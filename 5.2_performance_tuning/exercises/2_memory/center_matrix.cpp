@@ -133,7 +133,7 @@ public:
        }
     } else if (other.dims[0]==1) {
        if (other.dims[1] == dims[1]) {
-         // add the only element to all the rows in each column
+         // subtract the only element to all the rows in each column
 #pragma omp parallel for
          for (size_t col=0; col<dims[0]; col++)
            for (size_t row=0; row<dims[1]; row++)
