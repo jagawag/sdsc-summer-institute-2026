@@ -5,7 +5,8 @@
 # Requests an interactive srun on the Expanse shared partition with:
 #   1 node, 4 CPUs, 16 GB memory, 4 hour time limit
 #   Account: sdp173
-#   Reservation: si26cpu
+#   Reservation: si26cpu (Summer Institute only, remove after institute)
+#   Note: No QoS flag needed for shared partition (no shared-eot QoS exists)
 
 srun \
   --account=sdp173 \
