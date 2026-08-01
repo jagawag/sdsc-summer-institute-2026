@@ -9,7 +9,7 @@ This session consists of two topics:
 2. Interactive computing: Interactive high-performance computing (HPC) involves real-time user inputs that result in actions being performed on HPC compute nodes. This session presents an overview of interactive computing tools and methods.
 
 **Presented by:** [Mary Thomas](https://www.sdsc.edu/~mthomas/main.html) (mpthomas @ucsd.edu)
-* Todays presentation: COMPLECS-HPC-DSI26-Aug-2026-Running-Jobs.pdf
+* Todays presentation: https://github.com/sdsc/sdsc-summer-institute-2026/blob/main/2.2_running_batch_and_interactive_jobs/HPC-DSI-August-2026-Running-Jobs.pdf
 
 ### Reading and Presentations: Source material can be found on the COMPLECS [Google Drive](https://drive.google.com/drive/u/0/folders/1OCf8FHmffihZB-UZfdduNGrgLcClLPOX)
 * **Lecture material:**
