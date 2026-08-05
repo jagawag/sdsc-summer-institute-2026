@@ -1,1 +1,7 @@
 2.4_code_migration_and_software_environments/pytorch/Miniforge3-Linux-x86_64.sh
+File 2.4_code_migration_and_software_environments/pytorch/lolcow.sif
+*.tar
+*.bzip
+*.gzip
+*.
+*/*.
