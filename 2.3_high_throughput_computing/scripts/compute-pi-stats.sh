@@ -10,7 +10,10 @@
 #SBATCH --mem=1G
 #SBATCH --time=00:05:00
 #SBATCH --output=%x.o%j.%N
+<<<<<<< HEAD
 #SBATCH --array=1-20%10
+=======
+>>>>>>> upstream/main
 
 declare -xir DEPENDENT_SLURM_ARRAY_JOB_ID="${1}"
 

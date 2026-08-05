@@ -6,6 +6,7 @@ Please complete the following before the institute begins. Being prepared will l
 ## Preparation Checklist
 
 - [ ] **Set up your accounts:**
+<<<<<<< HEAD
     - [x] [Create a GitHub account](#github).
     - [x] [Update your ACCESS-CI profile](#hpc-systems-accounts) (institutional email, country of residence).
     - [x] [Set up SDSC 2FA](#hpc-systems-accounts) for SSH access.
@@ -20,6 +21,22 @@ Please complete the following before the institute begins. Being prepared will l
     - [x] [Using GitHub on Expanse](#basic-hpc-skills)
 - [x] **Attend Preparation Day:**
     - [x] Join the virtual Prep Day on Thursday, July 23, 2026, from 9am–11am (Pacific Time).
+=======
+    - [ ] [Create a GitHub account](#github).
+    - [ ] [Update your ACCESS-CI profile](#hpc-systems-accounts) (institutional email, country of residence).
+    - [ ] [Set up SDSC 2FA](#hpc-systems-accounts) for SSH access.
+- [ ] **Laptop setup:**
+    - [ ] [Install an SSH client](#computer-requirements) on your laptop.
+    - [ ] [Install Slack](#slack) and join the workspace.
+    - [ ] [Install Zoom](#zoom).
+- [ ] **Review basic HPC skills:**
+    - [ ] [Connecting Securely to SDSC HPC Systems](#basic-hpc-skills)
+    - [ ] [Basic Linux Skills for Expanse](#basic-hpc-skills)
+    - [ ] [Interactive Computing on Expanse](#basic-hpc-skills)
+    - [ ] [Using GitHub on Expanse](#basic-hpc-skills)
+- [ ] **Attend Preparation Day:**
+    - [ ] Join the virtual Prep Day on Thursday, July 23, 2026, from 9am–11am (Pacific Time).
+>>>>>>> upstream/main
 
 ---
 

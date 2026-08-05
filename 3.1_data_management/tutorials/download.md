@@ -103,6 +103,7 @@ wget https://js2.jetstream-cloud.org:8001/swift/v1/sdsc-public/datasets/cifar/10
 
 *Output*
 ```
+<<<<<<< HEAD
 [mkandes@login02 complecs]$ wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 --2026-04-20 15:46:00--  https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
 Resolving www.cs.toronto.edu (www.cs.toronto.edu)... 128.100.3.30
@@ -116,6 +117,21 @@ cifar-10-python.tar.gz           100%[==========================================
 2026-04-20 15:46:06 (33.2 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
 
 [mkandes@login02 complecs]$
+=======
+[mkandes@login01 ~]$ wget https://js2.jetstream-cloud.org:8001/swift/v1/sdsc-public/datasets/cifar/10/cifar-10-python.tar.gz
+--2026-08-03 15:41:39--  https://js2.jetstream-cloud.org:8001/swift/v1/sdsc-public/datasets/cifar/10/cifar-10-python.tar.gz
+Resolving js2.jetstream-cloud.org (js2.jetstream-cloud.org)... 149.165.158.2
+Connecting to js2.jetstream-cloud.org (js2.jetstream-cloud.org)|149.165.158.2|:8001... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 170498071 (163M) [application/gzip]
+Saving to: ‘cifar-10-python.tar.gz’
+
+cifar-10-python.tar 100%[===================>] 162.60M  51.3MB/s    in 3.3s    
+
+2026-08-03 15:41:43 (49.0 MB/s) - ‘cifar-10-python.tar.gz’ saved [170498071/170498071]
+
+[mkandes@login01 ~]$
+>>>>>>> upstream/main
 ```
 
 After the download completes, go ahead and list the files in your working directory using the `ls`command to check out how much data we've downloaded.
@@ -264,4 +280,8 @@ drwxr-xr-x  3 mkandes use300    6 Apr 20  2026 .
 ```
 
 #
+<<<<<<< HEAD
 [Back to Main Page](https://github.com/sdsc-complecs/data-management)
+=======
+[Back to Main Page](https://github.com/sdsc/sdsc-summer-institute-2026/edit/main/3.1_data_management)
+>>>>>>> upstream/main

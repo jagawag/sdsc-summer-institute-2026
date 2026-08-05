@@ -10,8 +10,15 @@
 #SBATCH --mem=1G
 #SBATCH --time=00:05:00
 #SBATCH --output=%x.o%j.%N
+<<<<<<< HEAD
 #SBATCH --array=0-9
 
 module purge
 
 time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 1000
+=======
+
+module purge
+
+time -p ../code/4pi/bash/pi.sh -b 8 -r 5 -s 10000
+>>>>>>> upstream/main

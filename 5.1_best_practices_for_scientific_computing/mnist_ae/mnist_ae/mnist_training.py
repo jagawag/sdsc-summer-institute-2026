@@ -82,17 +82,33 @@ def train_epoch(
     loader: torch.utils.data.DataLoader,
     optimizer: torch.optim.Optimizer,
     device: torch.device,
+<<<<<<< HEAD
 ) -> float:
     model.train()
     running = 0.0
     for xb, yb in loader:
+=======
+    max_batches: int | None = None,
+) -> float:
+    model.train()
+    running = 0.0
+    seen = 0
+    for batch_idx, (xb, yb) in enumerate(loader):
+        if max_batches is not None and batch_idx >= max_batches:
+            break
+>>>>>>> upstream/main
         xb, yb = xb.to(device), yb.to(device)
         optimizer.zero_grad()
         loss = F.nll_loss(model(xb), yb)
         loss.backward()
         optimizer.step()
         running += loss.item() * xb.size(0)
+<<<<<<< HEAD
     return running / len(loader.dataset)
+=======
+        seen += xb.size(0)
+    return running / max(seen, 1)
+>>>>>>> upstream/main
 
 
 #| export
@@ -101,15 +117,29 @@ def evaluate(
     model: nn.Module,
     loader: torch.utils.data.DataLoader,
     device: torch.device,
+<<<<<<< HEAD
 ) -> float:
     model.eval()
     correct, total = 0, 0
     for xb, yb in loader:
+=======
+    max_batches: int | None = None,
+) -> float:
+    model.eval()
+    correct, total = 0, 0
+    for batch_idx, (xb, yb) in enumerate(loader):
+        if max_batches is not None and batch_idx >= max_batches:
+            break
+>>>>>>> upstream/main
         xb, yb = xb.to(device), yb.to(device)
         pred = model(xb).argmax(dim=1)
         correct += (pred == yb).sum().item()
         total   += yb.size(0)
+<<<<<<< HEAD
     return correct / total
+=======
+    return correct / max(total, 1)
+>>>>>>> upstream/main
 
 
 #────────────────────────────── CLI ────────────────────────────────#
@@ -120,6 +150,11 @@ def main() -> None:
     p.add_argument("--epochs",      type=int,   default=5)
     p.add_argument("--lr",          type=float, default=1e-3)
     p.add_argument("--batch_size",  type=int,   default=64)
+<<<<<<< HEAD
+=======
+    p.add_argument("--max_train_batches", type=int, default=None)
+    p.add_argument("--max_test_batches",  type=int, default=None)
+>>>>>>> upstream/main
     args = p.parse_args()
 
     device = get_default_device(verbose=True)
@@ -130,8 +165,15 @@ def main() -> None:
 
     for ep in range(1, args.epochs + 1):
         t0 = time.time()
+<<<<<<< HEAD
         tr_loss = train_epoch(model, tr_dl, opt, device)
         acc     = evaluate(model,  te_dl, device)
+=======
+        tr_loss = train_epoch(
+            model, tr_dl, opt, device, max_batches=args.max_train_batches
+        )
+        acc     = evaluate(model, te_dl, device, max_batches=args.max_test_batches)
+>>>>>>> upstream/main
         print(f"epoch {ep:2d} | {time.time()-t0:4.1f}s | "
               f"loss {tr_loss:.4f} | acc {acc*100:.2f}%")
 

@@ -41,7 +41,11 @@ Look for output like this:
 
 ```text
 Put this in .env from Expanse Jupyter:
+<<<<<<< HEAD
 OPENAI_API_KEY=sk-your-key-here
+=======
+OPENAI_API_KEY=sk-v9OPgaiAitIXCwJG3IqDF8CnFN4wNkVd
+>>>>>>> upstream/main
 OPENAI_MODEL=qwen3
 WEAVIATE_HTTP_HOST=exp-3-29
 WEAVIATE_HTTP_PORT=11105

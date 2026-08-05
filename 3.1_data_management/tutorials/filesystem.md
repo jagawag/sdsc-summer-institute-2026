@@ -436,4 +436,8 @@ exit
 [mkandes@login02 complecs]$
 ```
 # 
+<<<<<<< HEAD
 [Back to Main Page](https://github.com/sdsc-complecs/data-management)
+=======
+[Back to Main Page](https://github.com/sdsc/sdsc-summer-institute-2026/edit/main/3.1_data_management)
+>>>>>>> upstream/main

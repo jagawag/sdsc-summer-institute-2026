@@ -13,7 +13,12 @@ _tmp*
 tmp*
 tags
 *.pkg
+<<<<<<< HEAD
 
+=======
+*.pth
+mnist_cnn.pth
+>>>>>>> upstream/main
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

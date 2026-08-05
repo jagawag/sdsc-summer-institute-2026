@@ -2,7 +2,15 @@
 
 #SBATCH --job-name=kg-db
 
+<<<<<<< HEAD
 #SBATCH --partition=shared
+=======
+#SBATCH --partition=compute
+
+#SBATCH --reservation=si26cpu
+
+#SBATCH --qos=normal-eot
+>>>>>>> upstream/main
 
 #SBATCH --constraint="lustre"
 
