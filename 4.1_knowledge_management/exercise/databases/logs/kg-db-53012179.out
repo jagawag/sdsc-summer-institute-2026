@@ -1,0 +1,33 @@
+Starting database services for job 53012179
+NODE=exp-1-03
+Runtime data directory: /scratch/jkrone/job_53012179/kg-db
+INFO:    Instance stats will not be available - requires cgroups v2 with systemd as manager.
+INFO:    instance started successfully
+INFO:    Instance stats will not be available - requires cgroups v2 with systemd as manager.
+INFO:    instance started successfully
+Waiting for ports...
+LISTEN 0      128                  *:20895            *:*          
+LISTEN 0      128                  *:20896            *:*          
+LISTEN 0      50                   *:20897            *:*          
+LISTEN 0      128                  *:20898            *:*          
+
+Put this in notebooks/.env from Expanse Jupyter:
+OPENAI_API_KEY=sk-your-key-here
+OPENAI_MODEL=gpt-4.1-mini
+WEAVIATE_HTTP_HOST=exp-1-03
+WEAVIATE_HTTP_PORT=20895
+WEAVIATE_GRPC_HOST=exp-1-03
+WEAVIATE_GRPC_PORT=20896
+WEAVIATE_COLLECTION=OcrChunk
+NEO4J_URI=bolt://exp-1-03:20898
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=a9dad8f0606be123118836a5
+
+Logs:
+/scratch/jkrone/job_53012179/kg-db/weaviate.log
+/scratch/jkrone/job_53012179/kg-db/neo4j.log
+slurmstepd: error: *** JOB 53012179 ON exp-1-03 CANCELLED AT 2026-08-05T09:59:50 ***
+INFO:    Stopping weaviate-53012179 instance of /expanse/lustre/projects/sdp173/zliang7/containers/weaviate.sif (PID=3852729)
+/cm/local/apps/slurm/var/spool/job53012179/slurm_script: line 79: 3852753 Terminated              singularity exec --cleanenv instance://weaviate-$SLURM_JOB_ID /bin/weaviate --host 0.0.0.0 --port "$WEAVIATE_HTTP_PORT" --scheme http > "$JOBDIR/weaviate.log" 2>&1
+/cm/local/apps/slurm/var/spool/job53012179/slurm_script: line 79: 3852819 Terminated              singularity exec --cleanenv instance://neo4j-$SLURM_JOB_ID /startup/docker-entrypoint.sh neo4j > "$JOBDIR/neo4j.log" 2>&1
+INFO:    Stopping neo4j-53012179 instance of /expanse/lustre/projects/sdp173/zliang7/containers/neo4j.sif (PID=3852789)
