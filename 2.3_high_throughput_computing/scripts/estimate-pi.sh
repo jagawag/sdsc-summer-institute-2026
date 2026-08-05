@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 #SBATCH --job-name=estimate-pi
-#SBATCH --account=gue998
-#SBATCH --reservation=si25cpu
+#SBATCH --account=sdp173
+#SBATCH --reservation=si26cpu
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
@@ -10,7 +10,8 @@
 #SBATCH --mem=1G
 #SBATCH --time=00:30:00
 #SBATCH --output=%x.o%j.%N
+#SBATCH --array=0-9
 
 module purge
 
-time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 10000
+time -p "${HOME}/4pi/bash/pi.sh" -b 8 -r 5 -s 1000

@@ -16,6 +16,7 @@ void one_axpy(int vector_size, float *Z, float *X, float *Y, float alpha) {
     // Main AXPY loop
     //
     // Student TODO: Add OpenMP parallelization here
+    #pragma omp parallel for 
     for (int i = 0; i < vector_size; i++) {
         Z[i] = alpha * X[i] + Y[i];
     }

@@ -19,7 +19,6 @@ double one_pi(double start_noise,int pi_iterations) {
     // Main compute loop
     //
     // Student TODO: Add OpenMP parallelization here
-    #pragma omp parallel for reduction(-:pi_iterations)
     for (int i = 0; i < (pi_iterations-1); i+=2) {
         pi += (4.0 / (2.0*i+1.0));
         pi -= (4.0 / (2.0*(i+1)+1.0));
