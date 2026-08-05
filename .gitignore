@@ -5,3 +5,5 @@ File 2.4_code_migration_and_software_environments/pytorch/lolcow.sif
 *.gzip
 *.
 */*.
+*.sif
+Miniforge3-Linux-*.sh
